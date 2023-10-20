@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Mr.kk Restaurant</h1>
+                    <strong>Get free membership 0</strong>
+                    <hr>
+                </div>
+
+                <form [formGroup]="myform" (ngSubmit)="signUp()">
+                    <div class="form-group">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail">Name</label>
+                            <input type="name" formControlName="name" maxlength="20" class="form-control"
+                                id="exampleInputEmail" placeholder="Enter your name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail">Mobaile Number</label>
+                            <input type="number" formControlName="mobaile" maxlength="10" class="form-control"
+                                id="exampleInputEmail" placeholder="Enter your mobaile number">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail">Email id</label>
+                            <input type="email" formControlName="email" maxlength="20" class="form-control"
+                                id="exampleInputEmail" placeholder="Enter your Email ">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail">password</label>
+                            <input type="password" formControlName="password" maxlength="20" class="form-control"
+                                id="exampleInputEmail" placeholder="Enter your password ">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">SignUp</button>
+                </form>
+
+                <a style="color: rgb(245, 4, 4); margin-top: 10px;" routerLink="/login">Already registered? Click here to login</a>
+            </div>
+        </div>
+    </div>
+</div>

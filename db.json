@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "mr.kk",
+      "email": "kk@gmail.com",
+      "mobaile": 1234567890,
+      "address": "laximnagar",
+      "services": "food test"
+    }
+  ],
+  "comments": [],
+  "signup": {
+    "name": "kunal karne",
+    "email": "kuanl@test.com",
+    "mobaile": 9730142132,
+    "password": "12345"
+  }
+}

@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Mr.kk Restaurant</h1>
+                    <strong>Feel Free To Login </strong>
+                    <hr>
+                </div>
+
+                <form [formGroup]="formValue" (ngSubmit)="login()">
+
+                    <div class="form-group">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail">Email id</label>
+                            <input type="email" formControlName="email" maxlength="20" class="form-control"
+                                id="exampleInputEmail" placeholder="Enter your Email ">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail">password</label>
+                            <input type="password" formControlName="password" maxlength="20" class="form-control"
+                                id="exampleInputEmail" placeholder="Enter your password ">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+
+                <a style="color: rgb(245, 4, 4); margin-top: 10px;" routerLink="/signup">New User? Click here to Register</a>
+            </div>
+        </div>
+    </div>
+</div>
